@@ -12,6 +12,6 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.use(['templating', 'jeremy:selectize', 'percolate:google-api']);
+  api.use(['templating', 'jeremy:selectize@0.1.3', 'percolate:google-api@1.0.1']);
   api.addFiles(['selectize-google-contacts.html', 'selectize-google-contacts.js'], 'client');
 });
