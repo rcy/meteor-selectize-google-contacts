@@ -1,6 +1,6 @@
 Package.describe({
   name: 'rcy:selectize-google-contacts',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'Input for multiple google contacts using selectize',
   // URL to the Git repository containing the source code for this package.
