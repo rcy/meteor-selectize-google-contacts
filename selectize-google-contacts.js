@@ -31,6 +31,7 @@ Template.selectizeGoogleContacts.onRendered(function () {
 
       GoogleApi.get('/m8/feeds/contacts/default/full', {params: {alt: 'json', q: query, 'max-results': 100, v:"3.0"}},
                     function (err, data) {
+                      if (err) throw err;
                       var array = [];
 
                       if (Meteor._get(data, 'feed', 'entry')) {
