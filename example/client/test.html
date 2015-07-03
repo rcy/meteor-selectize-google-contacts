@@ -1,0 +1,17 @@
+<head>
+  <title>rcy:selectize-google-contacts</title>
+</head>
+
+<body>
+  <h1>rcy:selectize-google-contacts demo</h1>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{> loginButtons}}
+  {{#if currentUser}}
+    <div>
+      {{> selectizeGoogleContacts name="emails" placeholder="Enter contact name or email"}}
+    </div>
+  {{/if}}
+</template>
